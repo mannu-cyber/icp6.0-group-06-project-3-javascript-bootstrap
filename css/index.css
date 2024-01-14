@@ -1,0 +1,14 @@
+@font-face {
+    font-family: h;
+    src: url(../fonts/Chango\ Regular.txt);
+}
+
+.navbar-brand{
+    font-family: h;
+    font-size:20px !important;
+}
+
+.navbar-toggler-icon{
+    
+    background-color: aliceblue;
+}
