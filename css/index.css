@@ -1,14 +1,124 @@
 @font-face {
-    font-family: h;
-    src: url(../fonts/Chango\ Regular.txt);
+  font-family: h;
+  src: url(../fonts/Chango\ Regular.txt);
 }
 
-.navbar-brand{
-    font-family: h;
-    font-size:20px !important;
+.navbar-brand {
+  font-family: h;
+  font-size: 20px !important;
 }
 
-.navbar-toggler-icon{
-    
-    background-color: aliceblue;
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 4vw;
+}
+
+.left-f {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 450px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.jump-links {
+  display: flex;
+  gap: 25px;
+}
+
+.left-f i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+i span {
+  font-size: 15px;
+}
+.Footer a {
+  text-decoration: none;
+}
+.right-f {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.right-link {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-item {
+  border-image: fill 0 linear-gradient(#001, #000);
+  height: 80vh;
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-container {
+  position: absolute;
+  width: 100%;
+
+  bottom: 0%;
+  left: 0%;
+}
+
+.gradient-bg {
+  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  padding: 20px;
+  padding-left: 100px;
+  color: #fff;
+}
+.gradient-bg-card {
+  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  padding: 20px;
+position: absolute;
+bottom: -9px;
+  color: #fff;
+}
+
+.card-container .card {
+  height: 400px;
+  width: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .Footer {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .left-f,
+  .right-f {
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    height: 37vh;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .carousel-item {
+    height: 35vh;
+  }
 }
