@@ -1,169 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlavorFiesta</title>
-<link rel="stylesheet" href="./css/index.css">
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="shortcut icon" href="./images&logo/flavorfiesta-favicon-black.png" type="gif">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body data-bs-theme="dark">
-
-
-<div class=" ">
-
-    <nav class="navbar navbar-expand-lg bg-dark-subtle pt-5 pb-3 px-5 ">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images&logo/flavorfiesta-favicon-black.png"
+      type="gif"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body data-bs-theme="dark">
+    <div class=" ">
+      <nav class="navbar navbar-expand-lg bg-dark-subtle pt-5 pb-3 px-5">
         <div class="container-fluid">
-          <a class="navbar-brand light " href="#">FlavorFiest<sup>©️</sup></a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon  "></span>
+          <a class="navbar-brand light" href="#">FlavorFiest<sup>©️</sup></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5"
+              style="--bs-scroll-height: 100px"
+            >
               <li class="nav-item">
-                <a class="nav-link active light  fs-5" aria-current="page" href="#">Kitchen</a>
+                <a
+                  class="nav-link active light fs-5"
+                  aria-current="page"
+                  href="#"
+                  >Kitchen</a
+                >
               </li>
-           
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  fs-5  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dishes
+                <a
+                  class="nav-link dropdown-toggle fs-5"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dishes
                 </a>
-                <ul class="dropdown-menu p-3  ">
+                <ul class="dropdown-menu p-3">
                   <li><a class="dropdown-item me-2" href="#">Seasonal☁️</a></li>
                   <li><a class="dropdown-item me-2" href="#">Special ♨️</a></li>
-                    
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link light  fs-5" href="#">Recipes</a> 
+                <a class="nav-link light fs-5" href="#">Recipes</a>
               </li>
               <li class="nav-item">
                 <!-- <a class="nav-link disabled light text-light" aria-disabled="true">Link</a> -->
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="button" class="btn btn-outline-light">Search</button>   
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="button" class="btn btn-outline-light">
+                Search
+              </button>
             </form>
 
             <div class="nav-item">
-                <div class="form-check form-switch mx-4">
-                    <input
-                      class="form-check-input p-2"
-                      type="checkbox"
-                      role="switch"
-                      id="flexSwitchCheckChecked"
-                      checked
-                      onclick="drkLight ()"
-                    />
-                  </div>
-
+              <div class="form-check form-switch mx-4">
+                <input
+                  class="form-check-input p-2"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                  onclick="drkLight ()"
+                />
+              </div>
             </div>
           </div>
         </div>
       </nav>
+    </div>
 
-</div>
+    <div class="container">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide my-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img
+              class="img-fluid"
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/20/22/44/AU2lov1lQ8O9BU2Svopb_Thai%2520Satay%2520Noodles%2520202244_final%25202.jpg"
+              alt=""
+            />
+            <div class="gradient-bg btn-container pb-5 ps-5">
+              <h1 class="pa-5 cr-head">
+                QUICK & EASY <br />
+                SPRING DINNERS
+              </h1>
+              <button type="button" class="pa-5 btn btn-outline-light">
+                Check Out
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="img-fluid"
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/26/73/3/TOVNhUPeQNOlaeR892Jn_ginger-ale-ham-6644.jpg"
+              alt=""
+            />
+            <div class="pa-5 gradient-bg btn-container">
+              <h1 class="pa-5 cr-head">
+                QUICK & EASY <br />
+                FALL DINNERS
+              </h1>
+              <button type="button" class="btn pa-5 btn-outline-light">
+                Check Out
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="img-fluid"
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/53/85/34/HoZMHCKR8iyh2FETO0tg_0S9A0350.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="gradient-bg pb-5 pa-5 btn-container">
+              <h1 class="pa-5 cr-head">
+                FAVORITE CANNING <br />
+                & PICKLING RECIPES
+              </h1>
+              <button type="button" class="btn pa-5 btn-outline-light">
+                Check Out
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
+    <div class="container mb-4">
+      <h1 class="my-5">WHAT WE'RE CRAVING</h1>
 
+      <!-- <div class="row row-cols-4 gap-">
+  <div class=" position-relative mx-auto col-lg-3 col-md-4 col-sm-12 card border ">
+    <img class="card-img-top img-fluid" src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_750,ar_1:1/foodcom/images/86e4415a-e5e8-4a24-97c9-8532d2566bff.jpg" alt="">
+      <h1 class="position-absolute left-0 gradient-bg-card bottom-0%">
+        COMFORT FOOD RECIPES</h1>
+  </div>
+  <div class=" position-relative mx-auto col-lg-3 col-md-4 col-sm-12 card border ">
+    <img class="card-img-top img-fluid" src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/53/87/22/XwasSoVDQbiJIV91kylg_0S9A4365.jpg" alt="">
+      <h1 class="position-absolute left-0 bottom-0 gradient-bg">
+ LUNCHES FOR KIDS
+        </h1>
+  </div>
+  <div class=" position-relative mx-auto col-lg-3 col-md-4 col-sm-12 card border ">
+    <img class="card-img-top img-fluid" src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/19/44/00/54Jim9iVTQkU7tkVebbK_chicken%2520tenders%2520SITE-2.jpg" alt="">
+      <h1 class="position-absolute left-0 gradient-bg bottom-0">
+       EASY INSTANT POT RECIPES</h1>
+  </div>
+</div> -->
 
-<div class="container">
+      <div class="card-container d-flex justify-content-between flex-wrap flex-wrap-wrap">
+        <div class="card position-relative ">
+          <img
+            class="card-img-top img-fluid"  
+            src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/19/44/00/54Jim9iVTQkU7tkVebbK_chicken%2520tenders%2520SITE-2.jpg"
+            alt=""
+          />
+          <h1 class="position-absolute gradient-bg-card">
+            EASY INSTANT RECIPES
+          </h1>
+        </div>
 
-
-  <div id="carouselExampleAutoplaying" class="carousel slide my-5" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active position-relative">
-<img class="img-fluid" src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/20/22/44/AU2lov1lQ8O9BU2Svopb_Thai%2520Satay%2520Noodles%2520202244_final%25202.jpg" alt="">
-<div class="btn-container">
-  <h1 class=" cr-head">QUICK & EASY <br> SPRING DINNERS</h1>      
-  <button type="button" class="btn btn-outline-light">Check Out</button>
-
-
-</div>
-</div>
-      <div class="carousel-item">
-<img class="img-fluid"  src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/26/73/3/TOVNhUPeQNOlaeR892Jn_ginger-ale-ham-6644.jpg" alt="">
-<div class="btn-container">
-  <h1 class=" cr-head">QUICK & EASY <br> FALL DINNERS</h1>      
-  <button type="button" class="btn btn-outline-light">Check Out</button>
-
-
-</div>    
-
-</div>
-      <div class="carousel-item">
-        <img class="img-fluid"  src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/53/85/34/HoZMHCKR8iyh2FETO0tg_0S9A0350.jpg" class="d-block w-100" alt="...">
-        <div class="btn-container">
-          <h1 class=" cr-head"> FAVORITE CANNING <br> & PICKLING RECIPES</h1>      
-          <button type="button" class="btn btn-outline-light">Check Out</button>
-        
-        
+        <div class="card position-relative mx-auto">
+          <img
+            class="card-img-top img-fluid"
+            src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/53/87/22/XwasSoVDQbiJIV91kylg_0S9A4365.jpg"
+            alt=""
+          />
+          <h1 class="position-absolute gradient-bg-card">
+            LUNCHES FOR <br> KIDS
+          </h1>
+        </div>
+        <div class="card position-relative ">
+          <img
+            class="card-img-top img-fluid"
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_750,ar_1:1/foodcom/images/86e4415a-e5e8-4a24-97c9-8532d2566bff.jpg"
+            alt=""
+          />
+          <h1 class="position-absolute gradient-bg-card">
+            COMFORT FOOD RECIPES
+          </h1>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
 
+    <!--Start Footer -->
 
-<div class="container ">
+    <div class="Footer bg-dark-subtle">
+      <div class="left-f">
+        <div class="icons">
+          <i class="ri-youtube-line"></i>
+          <i class="ri-facebook-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-pinterest-line"></i>
+          <a href="./index.html">
+            <i class="ri-arrow-up-line" onclick="top()"
+              ><span>Back to Top</span></i
+            ></a
+          >
+        </div>
 
-  <div class="  row  mx-auto row-cols-4  ">
-    <div class="col-lg-3 col-md-4 col-sm-12 card border border-secondary-subtle col">Column</div>
-    <div class="col-lg-3 col-md-4 col-sm-12 card border border-secondary-subtle col">Column</div>
-    <div class="col-lg-3 col-md-4 col-sm-12 card border border-secondary-subtle col">Column</div>
-    <div class="col-lg-3 col-md-4 col-sm-12 card border border-secondary-subtle col">Column</div>
-  </div>
-
-
-</div>
-
-<!--Start Footer -->
-
-<div class="Footer">
-
-<div class="left-f">
-    <div class="icons">
-        <i class="  ri-youtube-line"></i>
-        <i class="  ri-facebook-line"></i>
-        <i class="  ri-instagram-line"></i>
-        <i class="  ri-twitter-line"></i>
-        <i class="  ri-pinterest-line"></i>
-        <a href="./index.html"> <i class=" ri-arrow-up-line" onclick="top()"><span>Back to Top</span></i></a>
+        <div class="jump-links">
+          <a href="./pages/all.html">All Catogories</a>
+          <a href="./pages/about.html">About Us</a>
+          <a href="./pages/about.html">Help Us</a>
+        </div>
+      </div>
+      <div class="right-f">
+        <p>copyright @ Flavor Fiesta 2024</p>
+        <div class="right-link">
+          <a href="">Advirtised</a>
+          <a href="">Privac Notice</a>
+          <a href="">Visit Agreement</a>
+        </div>
+      </div>
     </div>
 
-    <div class="jump-links">
-<a href="./pages/all.html">All Catogories</a>
-<a href="./pages/about.html">About Us</a>
-<a href="./pages/about.html">Help Us</a>    
-    </div>
-</div>
-<div class="right-f"><p>copyright @ Flavor Fiesta 2024</p>
-  <div class="right-link">
-    <a href="">Advirtised</a>
-    <a href="">Privac Notice</a>
-    <a href="">Visit Agreement</a></div>
-</div>
-</div>
+    <!--End Footer -->
 
-<!--End Footer -->
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="./js/index.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
