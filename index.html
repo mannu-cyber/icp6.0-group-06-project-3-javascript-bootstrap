@@ -1,288 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FlavorFiesta</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="./images&logo/flavorfiesta-favicon-black.png"
-      type="gif"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body data-bs-theme="dark">
-    <div class=" ">
-      <nav class="navbar navbar-expand-lg bg-dark-subtle pt-5 pb-3 px-5">
-        <div class="container-fluid">
-          <a class="navbar-brand light" href="#">FlavorFiest<sup>©️</sup></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a
-                  class="nav-link active light fs-5"
-                  aria-current="page"
-                  href="#"
-                  >Kitchen</a
-                >
-              </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle fs-5"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dishes
-                </a>
-                <ul class="dropdown-menu p-3">
-                  <li><a class="dropdown-item me-2" href="#">Seasonal☁️</a></li>
-                  <li><a class="dropdown-item me-2" href="#">Special ♨️</a></li>
-                </ul>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flavor | Fiesta</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./images&logo/flavorfiesta-favicon-black.png" type="gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link light fs-5" href="#">Recipes</a>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link disabled light text-light" aria-disabled="true">Link</a> -->
-              </li>
-            </ul>
-            <for id="toggleThemeBtn"m class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <a href="#"  id="toggleThemeBtn" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Search</a>
+<body data-bs-theme="dark">
+  <div class=" ">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle pt-5 pb-3 px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand light" href="#">FlavorFiest<sup>©️</sup></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link active light fs-5" aria-current="page" href="#">Kitchen</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dishes
+              </a>
+              <ul class="dropdown-menu p-3">
+                <li><a class="dropdown-item me-2" href="#">Seasonal☁️</a></li>
+                <li><a class="dropdown-item me-2" href="#">Special ♨️</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link light fs-5" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link disabled light text-light" aria-disabled="true">Link</a> -->
+            </li>
+          </ul>
+          <for id="toggleThemeBtn" m class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <a href="#" id="toggleThemeBtn" id="toggleThemeBtn"
+              class=" d-block mx-auto btn btn-outline-dark ">Search</a>
             </form>
 
             <div class="nav-item">
               <div class="form-check form-switch mx-4">
-                <input
-                  class="form-check-input p-2"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckChecked"
-                  checked
-                  onclick="drkLight ()"
-                />
+                <input class="form-check-input p-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked
+                  onclick="drkLight ()" />
               </div>
             </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide my-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img class="img-fluid"
+            src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/20/22/44/AU2lov1lQ8O9BU2Svopb_Thai%2520Satay%2520Noodles%2520202244_final%25202.jpg"
+            alt="" />
+          <div class="gradient-bg btn-container pb-5 ">
+            <h1 class="pa-5 cr-head">
+              QUICK & EASY <br />
+              SPRING DINNERS
+            </h1>
+            <a href="#" id="toggleThemeBtn" id="toggleThemeBtn"
+              class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out</a>
+
           </div>
         </div>
-      </nav>
-    </div>
+        <div class="carousel-item">
+          <img class="img-fluid"
+            src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/26/73/3/TOVNhUPeQNOlaeR892Jn_ginger-ale-ham-6644.jpg"
+            alt="" />
+          <div class="pa-5 gradient-bg btn-container">
+            <h1 class="pa-5 cr-head">
+              QUICK & EASY <br />
+              FALL DINNERS
+            </h1>
+            <a href="#" id="toggleThemeBtn" id="toggleThemeBtn"
+              class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out</a>
 
-    <div class="container">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide my-5"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active position-relative">
-            <img
-              class="img-fluid"
-              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/20/22/44/AU2lov1lQ8O9BU2Svopb_Thai%2520Satay%2520Noodles%2520202244_final%25202.jpg"
-              alt=""
-            />
-            <div class="gradient-bg btn-container pb-5 ">
-              <h1 class="pa-5 cr-head">
-                QUICK & EASY <br />
-                SPRING DINNERS
-              </h1>
-              <a href="#"  id="toggleThemeBtn" id="toggleThemeBtn" class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out</a>
-              
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-fluid"
-              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/26/73/3/TOVNhUPeQNOlaeR892Jn_ginger-ale-ham-6644.jpg"
-              alt=""
-            />
-            <div class="pa-5 gradient-bg btn-container">
-              <h1 class="pa-5 cr-head">
-                QUICK & EASY <br />
-                FALL DINNERS
-              </h1>
-              <a href="#"  id="toggleThemeBtn" id="toggleThemeBtn" class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out</a>
-               
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-fluid"
-              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/53/85/34/HoZMHCKR8iyh2FETO0tg_0S9A0350.jpg"
-             id="toggleThemeBtn"  class="d-block w-100"
-              alt="..."
-            />
-            <div class="gradient-bg pb-5 pa-5 btn-container">
-              <h1 class="pa-5 cr-head">
-                FAVORITE CANNING <br />
-                & PICKLING RECIPES
-              </h1>
-              <a href="#"  id="toggleThemeBtn" id="toggleThemeBtn" class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out  </a>
-            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img class="img-fluid"
+            src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/53/85/34/HoZMHCKR8iyh2FETO0tg_0S9A0350.jpg"
+            id="toggleThemeBtn" class="d-block w-100" alt="..." />
+          <div class="gradient-bg pb-5 pa-5 btn-container">
+            <h1 class="pa-5 cr-head">
+              FAVORITE CANNING <br />
+              & PICKLING RECIPES
+            </h1>
+            <a href="#" id="toggleThemeBtn" id="toggleThemeBtn"
+              class=" d-inline-block mx-auto btn btn-outline-dark ">Check Out </a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="container mb-4">
-      <h1 class="my-5">WHAT WE'RE CRAVING</h1>
-
-  
-<div class="container mt-3">
-  <div class="row row-cols-md-3 row-cols-xsm-1 row-cols-sm-1">
-    <div class="col col-md-6 col-sm-12 col-lg-4 mb-4">
-      <div class="card centered-card">
-        <img class="card-img-top img-fluid" src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_750,ar_1:1/foodcom/images/86e4415a-e5e8-4a24-97c9-8532d2566bff.jpg" alt="">
-        <h1 class="gradient-bg-card">
-          COMFORT FOOD RECIPES
-        </h1>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-sm-12 col-lg-4 mb-4">
-      <div class="card centered-card">
-        <img class="card-img-top img-fluid" src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/53/87/22/XwasSoVDQbiJIV91kylg_0S9A4365.jpg" alt="">
-        <h1 class="gradient-bg-card">
-          COMFORT FOOD RECIPES
-        </h1>
-      </div>
-    </div>
-
-    <div class=" col-md-6 col-sm-12 col-lg-4 col mb-4">
-      <div class="card centered-card">
-        <img class="card-img-top img-fluid" src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/19/44/00/54Jim9iVTQkU7tkVebbK_chicken%2520tenders%2520SITE-2.jpg" alt="">
-        <h1 class="gradient-bg-card">
-          EASY INSTANT POT RECIPES
-        </h1>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-</div>
 
-</div>
-     
-       
+  <div class="container mb-4">
+    <h1 class="my-5">WHAT WE'RE CRAVING</h1>
 
 
-<div class=" container explore">
+    <div class="container mt-3">
+      <div class="row row-cols-md-3 row-cols-xsm-1 row-cols-sm-1">
+        <div class="col col-md-6 col-sm-12 col-lg-4 mb-4">
+          <div class="card centered-card">
+            <img class="card-img-top img-fluid"
+              src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_750,ar_1:1/foodcom/images/86e4415a-e5e8-4a24-97c9-8532d2566bff.jpg"
+              alt="">
+            <h1 class="gradient-bg-card">
+              COMFORT FOOD RECIPES
+            </h1>
+          </div>
+        </div>
 
-<h1>EXPLORE MORE</h1>
+        <div class="col-md-6 col-sm-12 col-lg-4 mb-4">
+          <div class="card centered-card">
+            <img class="card-img-top img-fluid"
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/53/87/22/XwasSoVDQbiJIV91kylg_0S9A4365.jpg"
+              alt="">
+            <h1 class="gradient-bg-card">
+              COMFORT FOOD RECIPES
+            </h1>
+          </div>
+        </div>
+
+        <div class=" col-md-6 col-sm-12 col-lg-4 col mb-4">
+          <div class="card centered-card">
+            <img class="card-img-top img-fluid"
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_750,ar_1:1/v1/img/recipes/19/44/00/54Jim9iVTQkU7tkVebbK_chicken%2520tenders%2520SITE-2.jpg"
+              alt="">
+            <h1 class="gradient-bg-card">
+              EASY INSTANT POT RECIPES
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class=" container explore">
+
+    <h1>EXPLORE MORE</h1>
 
     <div class="row">
       <!-- Large screens: Show 5 cards in a row -->
       <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
         <div class="card rounded-card">
-          <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/be27babc-a2cb-4807-a7cf-f492f190f130.jpg" class="card-img-top" alt="Card Image">
+          <img
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/be27babc-a2cb-4807-a7cf-f492f190f130.jpg"
+            class="card-img-top" alt="Card Image">
           <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>          </div>
-        </div>
-      </div>
 
-
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-        <div class="card rounded-card">
-          <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/0ba5e633-8a82-4412-9912-3e4b021d3f36.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-        <div class="card rounded-card">
-          <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/9985d8e3-87d3-4cfc-b312-b355a6630e76.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-        <div class="card rounded-card">
-          <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/b968c752-8018-429d-aa68-b0baf71a9129.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#"  id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-        <div class="card rounded-card">
-          <img src="  https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/0e6210a9-7b32-4bae-a8a2-b1f8178cd33a.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#"  id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-        <div class="card rounded-card">
-          <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/4c90f65d-398c-462c-a165-eeca9e73aa8a.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body">
-    
-            <p class="card-text"></p>
-            <a href="#"  id="toggleThemeBtn" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Button</a>
+            <p class="card-text">Confort Food Classic</p>
+            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check Out</a>
           </div>
         </div>
       </div>
 
 
-</div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div class="card rounded-card">
+          <img
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/0ba5e633-8a82-4412-9912-3e4b021d3f36.jpg"
+            class="card-img-top" alt="Card Image">
+          <div class="card-body">
+
+            <p class="card-text">InterNation Eat</p>
+            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check Out</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div class="card rounded-card">
+          <img
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/9985d8e3-87d3-4cfc-b312-b355a6630e76.jpg"
+            class="card-img-top" alt="Card Image">
+          <div class="card-body">
+
+            <p class="card-text">BreakFast & Brunch</p>
+            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check Out</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div class="card rounded-card">
+          <img
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/b968c752-8018-429d-aa68-b0baf71a9129.jpg"
+            class="card-img-top" alt="Card Image">
+          <div class="card-body">
+
+            <p class="card-text">Community Picks</p>
+            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div class="card rounded-card">
+          <img
+            src="  https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/0e6210a9-7b32-4bae-a8a2-b1f8178cd33a.jpg"
+            class="card-img-top" alt="Card Image">
+          <div class="card-body">
+
+            <p class="card-text">Quick & Easy</p>
+            <a href="#" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div class="card rounded-card">
+          <img
+            src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_250,ar_1:1/foodcom/images/4c90f65d-398c-462c-a165-eeca9e73aa8a.jpg"
+            class="card-img-top" alt="Card Image">
+          <div class="card-body">
+
+            <p class="card-text ">CopyCat Recipes</p>
+            <a href="#" id="toggleThemeBtn" id="toggleThemeBtn" class=" d-block mx-auto btn btn-outline-dark ">Check
+              Out</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="container fresh-from-our-community">
+      <h1>Fresh From Our Community</h1>
+
+      <div class="row my-5 justify-content-md-center gap-5">
+
+        <div class="card shadow-lg col-lg-3 col-md-4 col-sm-12">
+
+        </div>
+        <div class="card shadow-lg col-lg-4 col-md-4 col-sm-12">
+          <h1>hello</h1>
+        </div>
+        <div class="card shadow-lg col-lg-3 col-md-4 col-sm-12">
+          <h1>hello</h1>
+        </div>
+
+
+      </div>
+
+    </div>
 
 
 
@@ -297,10 +287,7 @@
           <i class="ri-twitter-line"></i>
           <i class="ri-pinterest-line"></i>
           <a href="./index.html">
-            <i class="ri-arrow-up-line" onclick="top()"
-              ><span>Back to Top</span></i
-            ></a
-          >
+            <i class="ri-arrow-up-line" onclick="top()"><span>Back to Top</span></i></a>
         </div>
 
         <div class="jump-links">
@@ -321,17 +308,13 @@
 
     <!--End Footer -->
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
       integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
-  </body>
+</body>
+
 </html>
