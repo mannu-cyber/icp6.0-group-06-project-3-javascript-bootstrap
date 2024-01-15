@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 // function top(){
 //   gsap.to(, {
 //     duration: 0.5, // Animation duration in seconds
@@ -23,3 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
 //     ease: 'power2.inOut' // Easing function for a smooth transition
 //   });
 // }
+
+const toggleThemeBtn = document.getElementById("toggleThemeBtn");
+const body = document.body;
+
+toggleThemeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+});
