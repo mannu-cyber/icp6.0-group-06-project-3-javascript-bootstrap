@@ -66,6 +66,24 @@ i span {
   height: 100%;
 }
 
+.centered-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .centered-card {
+    margin-bottom: 20px; /* Add space between cards on smaller screens */
+  }
+}
+
 .btn-container {
   position: absolute;
   width: 100%;
@@ -75,10 +93,12 @@ i span {
 }
 
 .gradient-bg {
-  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, #0b0a0a 0%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
-  padding: 20px;
-  padding-left: 100px;
+  top: 50%;
+  height: 50%;
+  /* padding: 20px; */
+  padding-left: 200px;
   color: #fff;
 }
 .gradient-bg-card {
@@ -88,7 +108,9 @@ i span {
 position: absolute;
 bottom: -9px;
   color: #fff;
+ 
 }
+
 
 .card-container .card {
   height: 400px;
@@ -98,7 +120,23 @@ bottom: -9px;
 .card img {
   width: 100%;
   height: 100%;
-  background-color: red;
+}
+
+
+.rounded-card {
+  border-radius: 1rem; /* Adjust the border-radius for more or less roundness */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.card-img {
+  border-radius: 50%; /* Make the image circular */
+  max-width: 100%;
+  height: auto;
+}
+
+.dark-theme .btn-outline-dark {
+  color: #fff; 
+  border-color: #fff; 
 }
 
 @media (max-width: 800px) {
