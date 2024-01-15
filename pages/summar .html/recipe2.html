@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+   
+</style>
+<body>
+ <div class="row">
+     <div class="col-md"><br>    
+          <h3 class="fs-2 fw-bold m-30">LYNN'S FAMOUS GAZPACHO</h3>
+          <div ><img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> </div><br><br>
+    </div>
+    
+     <div class="col-md" style="margin: 10px;">    
+        <div  ><br>
+              <button style="margin-right:30px; width: 80px;"><img src="/images&logo/save.png" class="m-50" ></button>
+              <button style="margin-right:30px; width: 80px;"><img src="/images&logo/download.png" class="m-20"></button>
+              <button style="margin-right:30px;width: 80px;"><img src="/images&logo/print.png" class="m-20"></button>
+              <button style="margin-right:30px;width: 80px; "><img src="/images&logo/share.png" class="m-20"></button>
+        </div>
+    </div>    
+</div>  
+<div class="row">
+    <div class="row g-0">
+         <div class="col-md">
+             <img src="/images&logo/tomato-recipe.jpeg" style="width:29vw; margin-left: 200px;">
+        </div>
+     
+    <div class="col-md">
+        <div class=" card-body fs-4" >   
+             <p>Ready In: <b>40mins</b></p>
+            <p>Ingredients: <b>8</b></p>
+            
+            <div class="quantity-container">
+                <p>Serves: <span class="product-quantity" id="quantity-text">1</span> </p>
+                <img src="/images&logo/minus.png" class="btn-quantity w-40 " style="margin-right:30px ;" onclick="decreasequantity()"/>
+                <img src="/images&logo/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+            </div>
+       
+        </div>  
+    </div>
+    </div>
+</div><hr>    
+   <h4 style="color:rgb(27, 140, 185)">Nutrition information:</h4><br>
+
+<div class="row">
+  
+   <div class="col-md fs-5" style="margin-left: 50px; " >
+
+       <p style="font-size: 25px; ">INGREDIENTS</p>
+       <li>1 1⁄3 medium cucumbers, peeled & diced</li>
+       <li> 1 1⁄3  ripe tomatoes, chopped medium red bell pepper</li>
+       <li>2⁄3 clove garlic, chopped</li>
+       <li>2 carrots, coarsely chopped</li>
+       <li>1⁄4 cup red onion, thinly sliced</li>
+       <li>2 tablespoons fresh lemon juice</li>
+       <li>2⁄3 tablespoon olive oil</li>
+       <li>2⁄3 to taste salt and pepper</li>
+       <li>2⁄3 to taste celery salt or 2/3 to taste garlic salt</li>
+       <li>2⁄3 to taste red pepper flakes</li>
+       <li>2⁄3 to taste avocado 2⁄3 to taste radish</li>
+       <li>2⁄3 to taste cilantro, for garnish</li>
+       <li>1⁄3 cup water</li>
+    </div>
+
+   <div class="col-md-7">
+    
+       <p style="font-size: 25px;">DIRECTIONS</p>
+       <div class="fs-5">
+          <li>In a blender or very large food processor puree the tomatoes, red pepper, garlic, carrots, lemon juice, spices, olive oil,@ 1/2 of the cucumber chunks and a 1/2 cup of water.</li><br>
+<li>Pour into a large bowl or tupperware container, stir in the remainder of the diced cucumber.</li><br>
+<li> and chill overnight or for at least three hours.</li><br>
+<li>To serve, garnish soup with onion, avocado, cilantro, radishes, etc.</li>
+           
+       </div>
+
+    </div>
+</div>
+<br>
+<hr>
+<div style="margin-left: 50px ;">
+      <p style="font-size: 25px;">QUESTIONS & REPLIES</p>
+      🙂
+      <input placeholder="ask a question" id="search-bar-input" class="fs-5">
+      <button  class="btn btn-primary"  id="submit-btn">submit</button><br>
+</div>
+<br><br>
+<a href="/pages/summar .html/home.html" class="btn btn-primary" style="padding: 5px;margin-left: 70px;">summar </a>
+    <br><br><br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+    <script>const quantityElement=document.getElementById("quantity-text")
+        let quantity=parseInt(quantityElement.innerText);
+        function increasequantity(){
+            if(quantity<10){
+            quantityElement.innerText=++quantity;
+           }else{
+            alert("you can't add more than 10 items")
+        }
+    }
+function decreasequantity(){
+
+    if(quantity>1){
+        quantityElement.innerText=--quantity;
+    }else{
+        alert(" you can't add less than 1 items")
+}
+}</script>
+</body>
+</html> 
