@@ -6,51 +6,64 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="shortcut icon" href="/images&logo/flavorfiesta-favicon-black.png" type="gif">
     <title>Party</title>
+<link rel="stylesheet" href="../css/index.css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body class="" style="background-color: white; ">
+<body data-bs-theme="dark ">
 
     <div class=" ">
         
-        <nav class="navbar navbar-expand-lg bg-dark pt-5 pb-3 px-5 ">
-            <div class="container-fluid">
-              <a class="navbar-brand light text-light" href="#">FlavorFiest<sup>©️</sup></a>
-              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon  "></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active light text-light fs-5" aria-current="page" href="#">Kitchen</a>
-                  </li>
-               
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light fs-5  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dishes
-                    </a>
-                    <ul class="dropdown-menu ">
-                      <li><a class="dropdown-item " href="#">Action</a></li>
-                      <li><a class="dropdown-item " href="#">Another action</a></li>
-                        
-                      <li><a class="dropdown-item " href="#">Something else here</a></li>
-                    </ul>
-                  </li>
+      <nav class="navbar navbar-expand-lg bg-dark-subtle pt-5 pb-3 px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand light" href="#">FlavorFiest<sup>©️</sup></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link active light fs-5" aria-current="page" href="../index.html">Kitchen</a>
+              </li>
     
-                  <li class="nav-item">
-                    <a class="nav-link light text-light fs-5" href="#">Recipes</a> 
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="nav-link disabled light text-light" aria-disabled="true">Link</a> -->
-                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="../pages/summar .html/home.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dishes
+                </a>
+                <ul class="dropdown-menu p-3">
+                  <li><a class="dropdown-item me-2" href="../pages/drinks.html">Drinks</a></li>
+                  <li><a class="dropdown-item me-2" href="../pages/party2.html">Party Dish </a></li>
+                  <li><a class="dropdown-item me-2" href="../pages/Party.html">Special </a></li>
+                  <li><a class="dropdown-item me-2" href="../pages/lunch.html">Lunch </a></li>
+                  <li><a class="dropdown-item me-2" href="../pages/seasonal.html">Seasonal </a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button type="button" class="btn btn-outline-light">Search</button>   
-                </form>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link light fs-5" href="./pages/recipe.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled light text-light" aria-disabled="true">Link</a> -->
+              </li>
+            </ul>
+            <for id="toggleThemeBtn" m class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <a href="#" id="toggleThemeBtn" id="toggleThemeBtn"
+                class=" d-block mx-auto btn btn-outline-dark ">Search</a>
+              </form>
+    
+              <div class="nav-item">
+                <div class="form-check form-switch mx-4">
+                  <input class="form-check-input p-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked
+                    onclick="drkLight ()" />
+                </div>
               </div>
-            </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
          
        <div class="container">      
       
@@ -58,7 +71,7 @@
           <h4 style="font-weight: 200; ">Looking for quick and easy recipes for pasta , pizza 15-minute dinners, simple casseroles, or our best-rated recipes? You'll find them all here.
           </h4>
 
-          <div class="card border border-0  m-4" style="  ">
+          <div class="card border border-0  m-4" >
             <img src="/images&logo/image-1.webp" class="card-img " alt="..." style="height: 600px;  ">
             <br>
             <div class="card-img-overlay" style="margin-top: 20%;">
@@ -399,6 +412,33 @@
 
     </div>
     
+  <div class="Footer bg-dark-subtle">
+    <div class="left-f">
+      <div class="icons">
+        <i class="ri-youtube-line"></i>
+        <i class="ri-facebook-line"></i>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-twitter-line"></i>
+        <i class="ri-pinterest-line"></i>
+        <a href="./index.html">
+          <i class="ri-arrow-up-line" onclick="top()"><span>Back to Top</span></i></a>
+      </div>
+
+      <div class="jump-links">
+        <a href="./pages/all.html">All Catogories</a>
+        <a href="./pages/about.html">About Us</a>
+        <a href="./pages/about.html">Help Us</a>
+      </div>
+    </div>
+    <div class="right-f">
+      <p>copyright @ Flavor Fiesta 2024</p>
+      <div class="right-link">
+        <a href="">Advirtised</a>
+        <a href="">Privac Notice</a>
+        <a href="">Visit Agreement</a>
+      </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
