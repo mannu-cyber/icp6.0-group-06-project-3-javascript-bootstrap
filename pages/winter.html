@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WInter recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+    
+    
+    <style>
+        .img{
+            width:96vw ;
+            height: 13vw;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .title{
+            font-size: 40px;
+            font-weight: bold;
+            font-style:normal;
+            margin: 10px;
+        }
+        .discrition{
+            font-size: 20px; 
+            padding-left: 40px; 
+         
+        }
+       .item-img{
+        width: 10ew;
+        height: 10ew;
+        margin: 10px;
+        padding-left: 6px;
+        cursor: pointer;
+        transition: linear .5s
+       }
+       .item-img:hover{
+        scale: .95;
+       }
+       
+       .card-container{
+        position: relative;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+       
+    
+        .product-item{
+        width: 250px;
+        height: 300px;
+        border: 1px solid gray;
+        display: block;
+        margin: 20px auto;
+        box-shadow:0 0 10px black;
+        border-radius: 10px;
+        padding: 0 20px;
+            }
+    .product-img2{
+        width: 100%;
+        height: 190px;
+        display: block;
+        margin:  auto;
+        text-align: center;
+        padding: 10px;
+        padding-left: 10px;
+        transition: linear .5s;
+            }
+    .product-img1{
+        width: 100%;
+        height: 170px;
+        display: block;
+        margin:  auto;
+        text-align: center;
+        padding: 10px;
+        padding-left: 10px;
+        transition: linear .5s;
+    }
+    
+    
+    .product-img2:hover{
+      scale: .95;
+    }
+    .item{
+        font-size: 20px;
+    }
+    .container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+    .btn{
+        height: 40px;
+        width: 150px;
+        background-color:#ffb366;
+        color: whitesmoke;   
+        position: absolute;
+      border-radius: 10px;
+    left: 25%;
+    font-size: 20px;
+    font-weight: bold;
+      box-shadow: black;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #ffb300;
+        scale: .95;
+    }
+
+    .img3 {
+        height: 95%;
+        width: 180%;
+        padding-left: 9%;
+        padding-top: 20px;
+        cursor: pointer;
+
+    }
+    .img3:hover{
+        scale: .95;
+    }
+    .container2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+ background-color: whitesmoke;
+ padding-left: 100px;
+ padding-top: 40px;
+}
+
+
+.text {
+  font-size: 20px;
+  padding-left: 400px;
+}
+.text2{
+    font-size: 25px;
+    padding-left: 115px;
+}
+
+@media only screen and (max-width: 500px) {
+    .img {
+        width:96vw ;
+            height: 13vw;
+            cursor: pointer;
+            margin: 10px;
+    }
+    .title{
+            font-size: 40px;
+            font-weight: bold;
+            font-style:normal;
+            margin: 10px;
+    }
+}
+
+  @media screen and (min-width: 500px) and (max-width: 768px){
+    .item-img{
+        width: 500px;
+        height: 500px;
+        margin: 10px;
+        padding-left: 6px;
+        cursor: pointer;
+        transition: linear .5s
+       }
+       .card-container{
+        position: relative;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .product-item{
+        width: 250px;
+        height: 300px;
+        border: 1px solid gray;
+        display: block;
+        margin: 20px auto;
+        box-shadow:0 0 10px black;
+        border-radius: 10px;
+        padding: 0 20px;
+            }
+
+  }
+
+ 
+
+
+    </style>
+    <body>
+        <div class="top-image svelte-1mv8t38">
+            <img src="https://imgstore.sndimg.com/f_auto,c_thumb,q_55,w_1280,ar_5:2/foodcom/images/904c8e8b-2260-4c95-bf3b-ea1ea0a431c4.jpg"  class="img"> 
+            <p class="title">WINTER RECIPES</p>   
+            <p class="discrition">
+                Eat seasonally with these comforting winter recipes. Make the most of cold-weather <br>ingredients ranging from kale, cauliflower and squash to pears and grapefruit.</p>
+                <div class="container">
+                    <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_1280,ar_16:9/v1/img/recipes/32/65/16/LFx9vJmKQACSxcXCCBQc_mexican-pork-sweet-potato-curry-stew-5214.jpg" class="item-img">
+                    <div class="text-block">
+                      <h1 style="font-size: 60px; padding-top: 90px;  top: 30px; left: 20px; font-weight: bolder; color: white; padding-left: 190px; padding-right: 20px;" >QUICK & EASY WINTER <br>DINNERS</h1>
+                      <button class="btn">See All Them </button>
+                    </div>
+                  
+                  </div>
+         
+            </div>
+            
+        </div>
+        <div class="container2">
+            <div class="image">
+              <img src="https://img.sndimg.com/food/image/upload/img/recipes/39/41/58/Hqxi7PUsSfKm9SEVT7HN_IMG_8424.jpg" class="img3">
+            </div>
+            <div class="text">
+              
+
+              <h1>  14 Winter CSA Ingredients</h1><br>
+                <p>
+                Familiarize yourself with seasonal flavors and find inspired recipes using farm-fresh produce that you might find in a CSA (community-supported agriculture) box.
+                </p>
+            </div>
+          </div>
+       <div class="text2">
+        <h1>Seasonal Eats for Winter: Pears, 23 Ways</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="product-item">
+                <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_500,ar_4:3/v1/img/recipes/98/86/9/tE3ToJDHSqX80QezhswI_0S9A1402.jpg" class="product-img2"/>
+                <P class="item">PEAR CAKE</P>
+                <P style="text-align: right;">VIWE MORE</P>
+            </div>
+            <div class="product-item">
+                <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_500,ar_4:3/v1/img/recipes/11/52/91/tdk7EgAuSbCDo7ZiMQOd_DSC05500-2.jpg" class="product-img2"/>
+                <P class="item">SWEET POTATO &  SOUP</P>
+                <P style="text-align: right;">VIWE MORE</P>
+            </div>
+            <div class="product-item">
+                <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_500,ar_4:3/v1/img/recipes/90/66/7/bwSZLTynRgOc2tqSsMxc_AC%25205%2520final%2520-%2520apple%2520clafouti%2520sliced.jpg" class="product-img2"/>
+                <P class="item">PEAR CLAFOUTIS</P>
+                <P style="text-align: right;">VIWE MORE</P>
+                
+                
+            </div>
+            <div class="product-item">
+                <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_500,ar_4:3/v1/img/recipes/18/81/72/pA88Wc7LQl2FAmLjRqUX_ginger-pear-pork-chops-3441.jpg" class="product-img2">
+                <P class="item">SEE THEM ALL</P>
+                <P style="text-align: right;">VIWE MORE</P>
+            </div>     
+        </div>
+    
+    </body>
+    </html><div class="top-image svelte-1mv8t38">
