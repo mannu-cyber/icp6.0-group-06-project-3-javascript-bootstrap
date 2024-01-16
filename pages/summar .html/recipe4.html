@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+   
+</style>
+<body>
+ <div class="row">
+     <div class="col-md"><br>    
+          <h3 class="fs-2 fw-bold ml-30">SUPER EASY VEGAN CHILI</h3>
+          <div ><img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> <img src="/images&logo/star.png"> </div><br><br>
+    </div>
+    
+     <div class="col-md" style="margin: 10px;">    
+        <div  ><br>
+              <button style="margin-right:30px; width: 80px;"><img src="/images&logo/save.png" class="m-50" ></button>
+              <button style="margin-right:30px; width: 80px;"><img src="/images&logo/download.png" class="m-20"></button>
+              <button style="margin-right:30px;width: 80px;"><img src="/images&logo/print.png" class="m-20"></button>
+              <button style="margin-right:30px;width: 80px; "><img src="/images&logo/share.png" class="m-20"></button>
+        </div>
+    </div>    
+</div>  
+<div class="row">
+    <div class="row g-0">
+         <div class="col-md">
+             <img src="/images&logo/vegan chilli.jpeg" style="width:20vw; margin-left: 200px;">
+        </div>
+     
+    <div class="col-md">
+        <div class=" card-body fs-4" >   
+             <p>Ready In: <b>40mins</b></p>
+            <p>Ingredients: <b>8</b></p>
+           
+            <div class="quantity-container">
+                <p>Serves: <span class="product-quantity" id="quantity-text">1</span> </p>
+                <img src="/images&logo/minus.png" class="btn-quantity w-40 " style="margin-right:30px ;" onclick="decreasequantity()"/>
+                <img src="/images&logo/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+            </div>
+       
+        </div>  
+    </div>
+    </div>
+</div><hr>    
+   <h4 style="color:rgb(27, 140, 185)">Nutrition information:</h4><br>
+
+<div class="row">
+  
+   <div class="col-md fs-5" style="margin-left: 70px; " >
+
+       <p style="font-size: 25px; ">INGREDIENTS</p>
+       <li>1 tablespoon olive oil</li>
+       <li>1 onion, finely chopped</li>
+       <li>1 carrot, finely chopped</li>
+       <li>1 stalk celery, finely chopped</li>
+       <li>2 garlic cloves, finely chopped</li>
+       <li>1 1⁄2 cups lentils</li>
+       <li>15 ounces whole tomatoes</li>
+       <li>3 cups vegetable stock</li>
+       <li>2teaspoons oregano</li>
+      <li>1 teaspoon cayenne</li>
+       <li>1 tablespoon smoked paprika</li>
+       <li>1 pinch salt and black pepper</li>
+       <li>1⁄4 cup red wine vinegar</li>
+       <li>1⁄4 cup cilantro, finely chopped</li>
+    </div>
+
+   <div class="col-md-7">
+    
+       <p style="font-size: 25px;">DIRECTIONS</p>
+       <div style="font-size: 20px; margin: 10px;">
+        <li>Add oil to a pot on medium heat and stir the onion, celery and carrot for 4 minutes or until slightly golden. Add in the garlic and caramelize for a further 2 minutes.</li><br>
+       <li> Stir through the lentils for 1 minute before adding in the whole tomatoes, vegetable stock, oregano, cayenne, paprika, salt and pepper. Cover and bring to a boil before simmering for 25 minutes.</li><br>
+    <li>Pour in the red wine vinegar and stir in the cilantro, simmer for a further 5 minutes before serving in individual bowls and topping with coconut yoghurt and fresh cilantro leaves.</li><br>
+       </div>
+
+    </div>
+</div>
+<br><br>
+<hr>
+<div style="margin-left: 50px ;">
+      <p style="font-size: 25px;">QUESTIONS & REPLIES</p>
+      🙂
+      <input placeholder="ask a question" id="search-bar-input" class="fs-5">
+      <button  class="btn btn-primary"  id="submit-btn">submit</button><br>
+</div>
+<br><br>
+<a href="/pages/summar .html/home.html" class="btn btn-primary" style="padding: 5px;margin-left: 70px;">summar </a>
+    <br><br><br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+    <script>const quantityElement=document.getElementById("quantity-text")
+        let quantity=parseInt(quantityElement.innerText);
+        function increasequantity(){
+            if(quantity<10){
+            quantityElement.innerText=++quantity;
+           }else{
+            alert("you can't add more than 10 items")
+        }
+    }
+function decreasequantity(){
+
+    if(quantity>1){
+        quantityElement.innerText=--quantity;
+    }else{
+        alert(" you can't add less than 1 items")
+}
+}</script>
+</body>
+</html> 
