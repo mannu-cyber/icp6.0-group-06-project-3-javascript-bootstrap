@@ -15,17 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// function top(){
-//   gsap.to(, {
-//     duration: 0.5, // Animation duration in seconds
-//     scrollTo: 0,   // Scroll to the top of the page
-//     ease: 'power2.inOut' // Easing function for a smooth transition
-//   });
-// }
-
 const toggleThemeBtn = document.getElementById("toggleThemeBtn");
 const body = document.body;
 
 toggleThemeBtn.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
 });
+
+function fullimg() {
+  const imge = document.getElementById("imgelem");
+  imge.style.display = "flex";
+}
