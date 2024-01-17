@@ -1,4 +1,4 @@
-# Global Recipes Hub 🌍
+# Flavor Festa 🌍
 
 Welcome to Global Recipes Hub, your ultimate destination for discovering, learning, and sharing delectable recipes from around the world.
 
